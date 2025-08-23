@@ -1,0 +1,14 @@
+*{
+  background-color: gray;
+  padding: 5px;
+}
+label{
+  background: transparent;
+}
+input{
+  padding: 2px;
+  margin-left: 2px;
+}
+input:text{
+  margin-left: 2px;
+}
