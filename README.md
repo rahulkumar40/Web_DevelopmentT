@@ -188,9 +188,3 @@ It contains multiple projects, each covering **different concepts**, helping me 
 🔜 Full-stack MERN app integration
 
 ---
-
-✨ *This repo is my journey from **React beginner → confident React developer** 🚀*
-
----
-
-👉 Do you want me to also **add screenshots/demo GIFs** for each project (so the README looks more visual & engaging), or keep it text-based and clean?
