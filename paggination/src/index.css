@@ -1,0 +1,114 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.parent_product {
+  width: 100%;
+  min-height: 100vh;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product_items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid blueviolet;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.product_items:hover {
+  border: 3px solid wheat;
+  transform: scale(1.03);
+}
+
+.product_title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.product_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.product_image_container {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.paggination_page_number {
+  margin: 1rem auto;
+  width: 90%;
+  background-color: white;
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap; /* responsive pagination */
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.paggination_page_number span {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.paggination_page_number span:hover {
+  background-color: lightgray;
+}
+
+.paggination_page_number span:first-child,
+.paggination_page_number span:last-child {
+  background-color: aqua;
+  font-weight: bold;
+  border: none;
+}
+
+/* 🔹 Media Queries for better responsiveness */
+@media (max-width: 768px) {
+  .product_title {
+    font-size: 1rem;
+  }
+  .paggination_page_number {
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product_items {
+    padding: 0.5rem;
+  }
+  .product_title {
+    font-size: 0.9rem;
+  }
+  .paggination_page_number span {
+    padding: 4px 6px;
+    font-size: 0.9rem;
+  }
+}
