@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100vh;
+    width: 100vw;
+}
+.color-container{
+
+}
+.color-button{
+    background-color: orange;
+    padding: 1rem;
+    width:6rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in;
+}
+.color-button:hover{
+    /* opacity: 0.7; */
+    border: 2px solid wheat;
+    outline:none;
+
+}
+.color-button:active{
+    /* opacity: 1; */
+    background-color: rgb(176, 118, 9);
+}
